@@ -71,8 +71,6 @@ class Accountant:
             chart (DataFrame)
             general (DataFrame)
 
-        Returns:
-            DataFrame: Returns a joined dataframe
         """
         joined_charts = chart.join(general)
         self.add_to_db(joined_charts)
